@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Rendez-vous</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <form action="confirmation2.php" id="ft-form" method="POST" accept-charset="UTF-8">
+    <fieldset>
+      <legend>Espace client</legend>
+      <label>
+        Name
+        <input type="text" name="name" placeholder="full-name" required >
+      </label>
+      <div class="two-cols">
+        <label>
+          Email address
+          <input type="email" name="email" placeholder="Tap your Email" required>
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone" placeholder="06XXXXXXXX">
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Date de Rendez-vous</legend>
+      <div class="two-cols">
+        <label>
+          Date
+          <input type="date" name="Appointment-request" required>
+        </label>
+        <div class="inline">
+          <label>
+            horaires:
+            <input type="time" name="horaire">
+          </label>
+        </div>
+      </div>
+  
+    </fieldset>
+    <div class="btns">
+      <input type="text" name="_gotcha" value="" style="display:none;">
+      <input type="submit" value="Submit request">
+    </div>
+  </form>
+</body>
